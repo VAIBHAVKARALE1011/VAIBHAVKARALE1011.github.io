@@ -152,53 +152,52 @@
 						<!-- Element to contain animated typing -->
 						<span id="typing-animation"></span>
 
-						<script>
+<!-- 						<script> -->
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+<script>
+  // Initialize the typing animation
+  const typingAnimationElement = document.getElementById('typing-animation');
 
-						// Create an array of typing text
-						const typingTexts = [
-						'AI Engineer  ',
-						'Data Analyst  ',
-						'Python Developer  ',
-						];
+  // Create an array of typing text
+  const typingTexts = [
+    'AI Engineer  ',
+    'Data Analyst  ',
+    'Python Developer  ',
+  ];
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
+  // Create a function to display the typing animation for a given text
+  function playTypingAnimation(text) {
+    // Loop through each character and add it to the element
+    for (let i = 0; i < text.length; i++) {
+      setTimeout(() => {
+        typingAnimationElement.textContent += text[i];
+      }, i * 200); // Increase the delay to slow down the typing animation
+    }
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
+    // Once the animation is complete, reset the text and start over
+    setTimeout(() => {
+      typingAnimationElement.textContent = '';
+      playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+    }, text.length * 200);
+  }
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
+  // Start the typing animation loop
+  playTypingAnimation(typingTexts[0]);
+</script>
 
-						</script>
+<br>
+<p>
+  <a href="https://www.linkedin.com/in/vaibhavkarale" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+  <a href="https://github.com/VAIBHAVKARALE1011" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-<!-- 						<br>
-						<br>
-<!-- 			            <h2>A Data Analyst</h2> -->
-<!-- 						<h2 class="d-flex" style="margin-bottom: 0">With over 1 years of experience</h2> -->
-						<br>
-			            <p><a href="https://www.linkedin.com/in/vaibhavkarale " class="btn btn-primary py-3 px-4">LinkedIn</a> 
-							<a href="https://github.com/VAIBHAVKARALE1011" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
 
 
 
